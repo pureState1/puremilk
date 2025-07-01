@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import logo from '../assets/logo_darkerbg.png';
 
 function Navbar() {
   return (
@@ -7,8 +8,8 @@ function Navbar() {
       <div className="navbar-container">
         {/* Left: Logo */}
         <div className="logo">
-            Pure<span>State</span>
-        </div>
+  <img src={logo} alt="PureState Logo" className="logo-img" />
+</div>
 
         {/* Center: Nav Links */}
         <ul className="nav-links">

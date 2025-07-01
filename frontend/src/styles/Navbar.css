@@ -98,3 +98,22 @@ body {
     gap: 0.5rem;
   }
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.logo .highlight {
+  color: #f6e58d; /* Your highlight color */
+}

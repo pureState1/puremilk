@@ -1,7 +1,7 @@
 import '../styles/Testimonials.css';
-import user1 from '../assets/user1.png';
-import user2 from '../assets/UIUXdesginer.png';
-import user3 from '../assets/user1.png';
+import user1 from '../assets/testimonial1.png';
+import user2 from '../assets/testimonial2.png';
+import user3 from '../assets/testimonial3.png';
 
 function Testimonials() {
   const reviews = [
@@ -13,7 +13,7 @@ function Testimonials() {
     {
       image: user2,
       name: 'Ravi Verma',
-      comment: 'AgroMilk is now a part of our daily routine. My kids love the taste!',
+      comment: 'Purestate is now a part of our daily routine. My kids love the taste!',
     },
     {
       image: user3,

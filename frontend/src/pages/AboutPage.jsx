@@ -1,5 +1,5 @@
 import '../styles/AboutPage.css';
-import aboutImage from '../assets/farm.png';
+import aboutImage from '../assets/desi_cow.png';
 
 function AboutPage() {
   return (

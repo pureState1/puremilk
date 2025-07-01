@@ -1,5 +1,7 @@
 import '../styles/Footer.css';
 import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import logo from '../assets/logo_darkerbg.png';
+
 
 function Footer() {
   return (
@@ -8,7 +10,8 @@ function Footer() {
         
         {/* Logo & Tagline */}
         <div className="footer-brand">
-          <h2>Pure<span>State</span></h2>
+        <img src={logo} alt="PureState Logo" className="footer-logo-img" />
+
           <p>Pure • Fresh • Nutritious — straight from our farms.</p>
         </div>
 
@@ -38,7 +41,7 @@ function Footer() {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} AgroMilk. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} PureState. All rights reserved.</p>
       </div>
     </footer>
   );

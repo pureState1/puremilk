@@ -1,5 +1,5 @@
 import '../styles/About.css';
-import aboutImage from '../assets/about.png'; // Replace with your image
+import aboutImage from '../assets/desi_cow.png'; // Replace with your image
 
 function About() {
   return (
