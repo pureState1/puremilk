@@ -22,7 +22,7 @@ function Navbar() {
         <div className="navbar-actions">
           {/* <button className="btn login-btn">Login</button> */}
           <a
-            href="https://wa.me/919999999999" // Replace with your number
+            href="https://wa.me/919511112263" // Replace with your number
             target="_blank"
             rel="noopener noreferrer"
             className="btn whatsapp-btn"
