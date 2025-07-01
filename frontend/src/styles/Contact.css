@@ -1,0 +1,76 @@
+.contact-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Banner */
+.contact-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/contact-banner.png") center/cover no-repeat;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-banner p {
+  font-size: 1.2rem;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.info-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.info-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2d3436;
+}
+
+.info-text p {
+  color: #636e72;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+/* Google Map */
+.map-container {
+  flex: 1;
+  min-width: 280px;
+  height: 300px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}

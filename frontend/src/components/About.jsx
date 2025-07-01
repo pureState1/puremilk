@@ -9,9 +9,9 @@ function About() {
           <img src={aboutImage} alt="AgroMilk Farm" />
         </div>
         <div className="about-text">
-          <h2>About AgroMilk</h2>
+          <h2>About PureState</h2>
           <p>
-            At AgroMilk, we believe in delivering the freshest and most nutritious milk
+            At PureState, we believe in delivering the freshest and most nutritious milk
             directly from our farms to your home. Our cows are grass-fed, well-cared for,
             and raised without harmful additives, ensuring you get only the best quality.
           </p>

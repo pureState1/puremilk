@@ -14,13 +14,13 @@ function Navbar() {
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/milk">Our Milk</Link></li>
+          <li><Link to="/milk">Milk Products</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
         {/* Right: Actions */}
         <div className="navbar-actions">
-          <button className="btn login-btn">Login</button>
+          {/* <button className="btn login-btn">Login</button> */}
           <a
             href="https://wa.me/919999999999" // Replace with your number
             target="_blank"

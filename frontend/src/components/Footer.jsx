@@ -8,7 +8,7 @@ function Footer() {
         
         {/* Logo & Tagline */}
         <div className="footer-brand">
-          <h2>Agro<span>Milk</span></h2>
+          <h2>Pure<span>State</span></h2>
           <p>Pure • Fresh • Nutritious — straight from our farms.</p>
         </div>
 
@@ -26,8 +26,8 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-contact">
           <h4>Contact</h4>
-          <p>📞 +91 99999 99999</p>
-          <p>✉️ info@agromilk.in</p>
+          <p>📞 +91 9511112263</p>
+          <p>✉️ purestatefarms@gmail.com</p>
           <div className="footer-social">
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaInstagram /></a>

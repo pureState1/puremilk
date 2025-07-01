@@ -1,0 +1,106 @@
+.about-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Banner */
+.about-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/farm2.png") center/cover no-repeat;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-banner p {
+  font-size: 1.2rem;
+  color: #f1f2f6;
+}
+
+/* Story Section */
+.about-story {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.about-story-content {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-story-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2d3436;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #636e72;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Mission/Vision Cards */
+.about-values {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  max-width: 450px;
+  flex: 1;
+  text-align: center;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  color: #6ab04c;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #636e72;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-story-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-values {
+    flex-direction: column;
+    align-items: center;
+  }
+}
