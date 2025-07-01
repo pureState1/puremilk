@@ -18,7 +18,7 @@ function Hero() {
           <h1>Pure. Fresh. Nutritious.</h1>
           <p>Experience farm-fresh milk, delivered to your doorstep.</p>
           <a
-            href="https://wa.me/918294939371?text=I%20want%20to%20order%20milk"
+            href="https://wa.me/919511112263?text=I%20want%20to%20order%20milk"
             target="_blank"
             rel="noopener noreferrer"
             className="hero-button"
