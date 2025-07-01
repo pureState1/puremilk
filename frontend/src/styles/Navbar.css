@@ -117,3 +117,94 @@ body {
 .logo .highlight {
   color: #f6e58d; /* Your highlight color */
 }
+.navbar {
+  background-color: #6ab04c;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar-actions {
+  display: flex;
+}
+
+.btn.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+.mobile-only {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #6ab04c;
+    padding: 2rem 1rem;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar-actions {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .btn.mobile {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
