@@ -266,3 +266,82 @@
 .cta-btn:hover {
   background-color: #ffeaa7;
 }
+@media (max-width: 1024px) {
+  .milk-banner h1 {
+    font-size: 2.4rem;
+  }
+
+  .milk-nutrition h2,
+  .coming-soon h2,
+  .value-added-section h2,
+  .milk-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .milk-banner {
+    padding: 4rem 1.5rem;
+  }
+
+  .milk-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .milk-banner p {
+    font-size: 1rem;
+  }
+
+  .milk-nutrition,
+  .coming-soon {
+    padding: 2rem 1.5rem;
+  }
+
+  .milk-nutrition p {
+    font-size: 1rem;
+  }
+
+  .milk-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .milk-card img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .milk-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .milk-banner p {
+    font-size: 0.95rem;
+  }
+
+  .milk-nutrition h2,
+  .coming-soon h2,
+  .value-added-section h2,
+  .milk-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .milk-nutrition p,
+  .milk-card p {
+    font-size: 0.9rem;
+  }
+
+  .milk-card h3 {
+    font-size: 1rem;
+  }
+
+  .milk-card {
+    padding: 1rem;
+  }
+
+  .order-btn,
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

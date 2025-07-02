@@ -116,3 +116,44 @@
   font-weight: 600;
   font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .product-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .volume,
+  .tag,
+  .price,
+  .old-price,
+  .new-price {
+    font-size: 0.95rem;
+  }
+
+  .order-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

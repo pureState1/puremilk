@@ -4,7 +4,7 @@ import { GiMilkCarton, GiCow, GiHealthNormal } from 'react-icons/gi';
 function Features() {
   return (
     <section className="features-section">
-      <h2 className="section-title">Why Choose AgroMilk?</h2>
+      <h2 className="section-title">Why Choose PureState?</h2>
       <div className="features-container">
         <div className="feature-card">
           <GiCow className="feature-icon" />

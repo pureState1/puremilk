@@ -108,3 +108,36 @@
 .hero-button:hover {
   background-color: #1ebe5d;
 }
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-button {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}

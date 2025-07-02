@@ -72,6 +72,20 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
 /* Animations */
 @keyframes fadeInUp {
   0% {
