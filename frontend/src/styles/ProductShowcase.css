@@ -99,3 +99,20 @@
     opacity: 1;
   }
 }
+.price {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #d63031;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.new-price {
+  color: #2d3436;
+  font-weight: 600;
+  font-size: 1.2rem;
+}

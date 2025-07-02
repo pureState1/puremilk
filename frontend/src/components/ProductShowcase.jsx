@@ -1,7 +1,11 @@
 import '../styles/ProductShowcase.css';
 import bottle1 from '../assets/bottle1.png';
-import bottle2 from '../assets/bottle1.png';
-import bottle3 from '../assets/bottle1.png';
+import bottle2 from '../assets/bottle2.png';
+// import bottle3 from '../assets/bottle1.png';
+import paneer from '../assets/paneer.png';
+import ghee from '../assets/ghee.png';
+import flavouredMilk from '../assets/flavoured-milk.png';
+import chhena from '../assets/chhena.png';
 
 function ProductShowcase() {
   const products = [
@@ -9,23 +13,66 @@ function ProductShowcase() {
       image: bottle1,
       title: 'Classic Cow Milk',
       volume: '500ml',
-      price: '₹35',
+      price: { old: '₹55', new: '₹35' },
       tag: '100% Pure'
     },
     {
       image: bottle2,
       title: 'A2 Desi Milk',
       volume: '1L',
-      price: '₹70',
+      price: { old: '₹110', new: '₹80' },
       tag: 'Rich in Nutrients'
     },
     {
-      image: bottle3,
-      title: 'Organic Buffalo Milk',
+      image: paneer,
+      title: 'Vacuum-Packed Paneer',
+      volume: '500g',
+      price: { old: '₹200', new: '₹180' },
+      tag: 'Farm-Fresh & Hygienic'
+    },
+    {
+      image: paneer,
+      title: 'Vacuum-Packed Paneer',
+      volume: '1kg',
+      price: { old: '₹400', new: '₹340' },
+      tag: 'Farm-Fresh & Hygienic'
+    },
+    {
+      image: ghee,
+      title: 'A2 Desi Cow Ghee',
+      volume: '250ml',
+      price: { old: '₹800', new: '₹740' },
+      tag: 'Traditional Bilona Method'
+    },
+    {
+      image: ghee,
+      title: 'A2 Desi Cow Ghee',
+      volume: '500ml',
+      price: { old: '₹1600', new: '₹1509' },
+      tag: 'Traditional Bilona Method'
+    },
+    {
+      image: ghee,
+      title: 'A2 Desi Cow Ghee',
       volume: '1L',
-      price: '₹65',
-      tag: 'Thick & Creamy'
+      price: { old: '₹3200', new: '₹3000' },
+      tag: 'Traditional Bilona Method'
+    },
+    {
+      image: flavouredMilk,
+      title: 'Flavoured Milk',
+      volume: '200ml',
+      price: { new: '₹40' },
+      tag: 'Natural Flavors – Cardamom, Cocoa, Rose'
+    },
+    {
+      image: chhena,
+      title: 'Fresh Chhena',
+      volume: '250g / 500g',
+      price: { new: '₹70 / ₹130' },
+      tag: 'Soft & Spongy for Sweets'
     }
+    
   ];
 
   return (
@@ -34,18 +81,27 @@ function ProductShowcase() {
       <div className="product-grid">
         {products.map((product, index) => (
           <div className="product-card" key={index}>
+            
             <img src={product.image} alt={product.title} />
             <h3>{product.title}</h3>
             <p className="volume">{product.volume}</p>
             <p className="tag">{product.tag}</p>
-            <p className="price">{product.price}</p>
+            <p className="price">
+  {product.price.old && (
+    <span className="old-price">{product.price.old}</span>
+  )}
+  <span className="new-price">{product.price.new}</span>
+</p>
+
             <a
-              href={`https://wa.me/919999999999?text=I%20want%20to%20order%20${encodeURIComponent(product.title)}`}
+              href={`https://wa.me/919511112263?text=${encodeURIComponent(
+                `Hello! I'm interested in ordering:\n\n🧴 *${product.title}*\n📦 Quantity: ${product.volume}\n💰 Price: ${product.price}\n\nPlease share availability and delivery info.`
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="order-btn"
             >
-              Order Now
+              Order via WhatsApp
             </a>
           </div>
         ))}

@@ -6,3 +6,6 @@
   --text-dark: #2d3436;
   --cta: #e17055;
 }
+body {
+  margin: 0;
+}

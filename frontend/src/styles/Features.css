@@ -4,6 +4,9 @@
   text-align: center;
   overflow: hidden;
 }
+body {
+  margin: 0;
+}
 
 .section-title {
   font-size: 2.5rem;

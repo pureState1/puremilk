@@ -1,18 +1,18 @@
 import '../styles/Hero.css';
-import bgImage from '../assets/hero-bg.png'; // or video if you use video instead
-// import heroVideo from '../assets/hero.mp4';
+// import bgImage from '../assets/hero-bg.png'; // or video if you use video instead
+import heroVideo from '../assets/hero.mp4';
 
 function Hero() {
   return (
     <section
       className="hero-section"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      // style={{ backgroundImage: `url(${bgImage})` }}
     >
         {/* 🔁 Video Background */}
-      {/* <video className="hero-video" autoPlay muted loop playsInline>
+      <video className="hero-video" autoPlay muted loop playsInline>
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
-      </video> */}
+      </video>
       <div className="hero-overlay">
         <div className="hero-content">
           <h1>Pure. Fresh. Nutritious.</h1>
