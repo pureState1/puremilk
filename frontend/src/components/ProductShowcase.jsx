@@ -13,14 +13,14 @@ function ProductShowcase() {
       image: bottle1,
       title: 'Classic Cow Milk',
       volume: '500ml',
-      price: { old: '₹55', new: '₹35' },
+      price: { old: '₹60', new: '₹50' },
       tag: '100% Pure'
     },
     {
       image: bottle2,
       title: 'A2 Desi Milk',
       volume: '1L',
-      price: { old: '₹110', new: '₹80' },
+      price: { old: '₹120', new: '₹90' },
       tag: 'Rich in Nutrients'
     },
     {

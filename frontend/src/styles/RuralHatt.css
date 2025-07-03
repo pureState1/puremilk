@@ -1,0 +1,67 @@
+.rural-hatt {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.hatt-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hatt-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hatt-text h2 {
+  font-size: 2rem;
+  color: #6ab04c;
+  margin-bottom: 1rem;
+}
+
+.hatt-text p {
+  font-size: 1.05rem;
+  color: #2d3436;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.hatt-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+
+.hatt-text li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #636e72;
+}
+
+.hatt-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hatt-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hatt-container {
+    flex-direction: column;
+  }
+
+  .hatt-text h2 {
+    font-size: 1.6rem;
+  }
+}
