@@ -4,6 +4,7 @@ import Features from "../components/Features";
 import Hero from "../components/Hero";
 import ProductShowcase from "../components/ProductShowcase";
 import RuralHatt from "../components/RuralHatt";
+import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import VisionSection from "../components/VisionSection";
 
@@ -15,6 +16,7 @@ function Home() {
         <RuralHatt/>
         <FarmProcessing/>
         <DoorstepDelivery/>
+        <Services/>
         <VisionSection/>
         <ProductShowcase/>
         <Testimonials/>

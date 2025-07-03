@@ -22,7 +22,9 @@ function Navbar() {
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About</Link></li>
           <li><Link to="/milk" onClick={closeMenu}>Milk Products</Link></li>
+          <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
           <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+
           <li className="mobile-only">
             <a
               href="https://wa.me/919511112263"

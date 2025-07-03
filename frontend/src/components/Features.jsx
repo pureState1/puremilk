@@ -31,7 +31,7 @@ function Features() {
     },
     {
       image: tourismImg,
-      title: 'Agro-Tourism Training',
+      title: 'Agro-Tourism',
       description: 'We support rural entrepreneurship via farm stays, food trails, and village experiences.'
     },
     {
