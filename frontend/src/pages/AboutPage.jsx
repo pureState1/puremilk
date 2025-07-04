@@ -1,9 +1,9 @@
 import '../styles/AboutPage.css';
 import aboutImage from '../assets/desi_cow.png';
-import FounderImg from '../assets/Founder_ceo.jpg';
-import ceoImg from '../assets/ceo.png';
-import itImg from '../assets/it_specialist.jpg';
-import designerImg from '../assets/designer.jpg';
+// import FounderImg from '../assets/Founder_ceo.jpg';
+// import ceoImg from '../assets/ceo.png';
+// import itImg from '../assets/it_specialist.jpg';
+// import designerImg from '../assets/designer.jpg';
 
 function AboutPage() {
   return (
