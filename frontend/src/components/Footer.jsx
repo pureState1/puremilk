@@ -32,9 +32,9 @@ function Footer() {
           <p>📞 +91 9511112263</p>
           <p>✉️ purestatefarms@gmail.com</p>
           <div className="footer-social">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+            <a href="https://www.facebook.com/profile.php?id=61577960488871"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/purestateonline"><FaInstagram /></a>
+            <a href="https://wa.me/919511112263" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
           </div>
         </div>
       </div>

@@ -1,129 +1,17 @@
+/* Base */
 body {
   margin: 0;
+  font-family: "Segoe UI", sans-serif;
 }
 
+/* Navbar Container */
 .navbar {
-  background-color: #6fc04c;
+  background: linear-gradient(90deg, #6ab04c, #4caf50);
   padding: 1rem 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
-  z-index: 999;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo */
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  letter-spacing: 1px;
-}
-
-.logo span {
-  color: #f6e58d;
-}
-
-/* Nav Links Center */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-weight: 500;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.nav-links a:hover {
-  background-color: #badc58;
-  color: #2d3436;
-}
-
-/* Right: Buttons */
-.navbar-actions {
-  display: flex;
-  gap: 1rem;
-}
-
-.btn {
-  padding: 6px 14px;
-  border: none;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.login-btn {
-  background-color: #f6e58d;
-  color: #2d3436;
-}
-
-.login-btn:hover {
-  background-color: #ffeaa7;
-}
-
-.whatsapp-btn {
-  background-color: #fffb02;
-  color: rgb(23, 22, 22);
-}
-
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
-}
-
-/* Responsive: Stack for mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .navbar-actions {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  letter-spacing: 1px;
-}
-
-.logo-img {
-  width: 100px;
-  height: auto;
-}
-
-.logo .highlight {
-  color: #f6e58d; /* Your highlight color */
-}
-.navbar {
-  background-color: #6ab04c;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -134,10 +22,14 @@ body {
   align-items: center;
 }
 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .logo-img {
@@ -145,28 +37,85 @@ body {
   height: auto;
 }
 
+.logo .highlight {
+  color: #f6e58d;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f6e58d;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #f6e58d;
+}
+
+/* Buttons */
 .navbar-actions {
   display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.btn.login-btn {
+  background-color: #ffeaa7;
+  color: #2d3436;
+}
+
+.btn.login-btn:hover {
+  background-color: #f6e58d;
 }
 
 .btn.whatsapp-btn {
   background-color: #25d366;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
 }
 
 .btn.whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
 
-/* Hamburger */
+/* Hamburger Menu */
 .hamburger {
   display: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: white;
   cursor: pointer;
 }
@@ -174,37 +123,40 @@ body {
   display: none;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .nav-links {
     position: absolute;
     top: 70px;
     left: 0;
     right: 0;
+    background-color: #4caf50;
     flex-direction: column;
-    background-color: #6ab04c;
     padding: 2rem 1rem;
     display: none;
   }
 
   .nav-links.active {
     display: flex;
+    z-index: 998;
   }
 
   .navbar-actions {
     display: none;
   }
 
-  .hamburger {
-    display: block;
+  .btn.mobile {
+    margin-top: 1rem;
+    background-color: #25d366;
+    color: white;
+    display: inline-block;
+    text-align: center;
   }
 
   .mobile-only {
     display: block;
-  }
-
-  .btn.mobile {
-    margin-top: 1rem;
-    text-align: center;
   }
 }

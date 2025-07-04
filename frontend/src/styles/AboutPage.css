@@ -1,46 +1,48 @@
 .about-page {
   font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #2d3436;
 }
 
 /* Banner */
 .about-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/farm2.png") center/cover no-repeat;
-  color: white;
-  padding: 6rem 2rem;
+  color: #fff;
   text-align: center;
+  padding: 6rem 2rem;
 }
 
 .about-banner h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 .about-banner p {
   font-size: 1.2rem;
-  color: #f1f2f6;
+  font-weight: 400;
 }
 
 /* Story Section */
 .about-story {
   padding: 4rem 2rem;
-  background-color: #ffffff;
 }
 
 .about-story-content {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 2rem;
   max-width: 1200px;
-  margin: auto;
-  align-items: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .about-story-content img {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .about-text {
@@ -50,45 +52,105 @@
 .about-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #2d3436;
+  color: #6ab04c;
 }
 
 .about-text p {
   font-size: 1rem;
-  color: #636e72;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-/* Mission/Vision Cards */
+/* Mission & Vision */
 .about-values {
-  background-color: #f9f9f9;
-  padding: 4rem 2rem;
   display: flex;
-  gap: 2rem;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  justify-content: center;
+  background-color: #f9f9f9;
 }
 
 .value-card {
-  background-color: white;
+  background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  max-width: 450px;
-  flex: 1;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   text-align: center;
 }
 
 .value-card h3 {
+  color: #00b894;
   font-size: 1.5rem;
-  color: #6ab04c;
   margin-bottom: 1rem;
 }
 
 .value-card p {
-  color: #636e72;
   font-size: 1rem;
+  color: #636e72;
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #2d3436;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: #fdfdfd;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: #0984e3;
+}
+
+.team-card .role {
+  font-size: 0.95rem;
+  color: #636e72;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #2d3436;
   line-height: 1.6;
 }
 
@@ -99,7 +161,8 @@
     text-align: center;
   }
 
-  .about-values {
+  .about-values,
+  .team-grid {
     flex-direction: column;
     align-items: center;
   }
