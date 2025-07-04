@@ -52,7 +52,7 @@ function AboutPage() {
       </section>
 
       {/* Meet the Team */}
-      <section className="team-section">
+      {/* <section className="team-section">
         <h2>Meet Our Team</h2>
         <div className="team-grid">
         <div className="team-card">
@@ -90,7 +90,7 @@ function AboutPage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
